@@ -16,3 +16,9 @@ Route::post('/SignupPage', [InternController::class, 'class_signup'])->name('ins
 
 //Login user
 Route::post('/dashboard', [InternController::class, 'class_login'])->name('login_User');
+
+//Dashboard get user id
+// Route::get()
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

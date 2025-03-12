@@ -43,11 +43,13 @@
           <div class="card-body p-5 text-center">
 
             <h3 class="mb-5">Sign in</h3>
-            @foreach ($errors->all() as $error)
-              <div class="alert alert-danger" role="alert">
-                  {{ $error }}
-              </div>
-            @endforeach
+            @if($errors -> any())
+              @foreach ($errors->all() as $error)
+                <div class="alert alert-danger" role="alert">
+                    {{ $error }}
+                </div>
+              @endforeach
+            @endif
             <form action="{{ route('login_User') }}" method="post">
             @csrf
             

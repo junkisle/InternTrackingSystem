@@ -6,6 +6,8 @@ use DB;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
+
 
 class InternController extends Controller{
 
@@ -53,11 +55,11 @@ class InternController extends Controller{
             return back()->with('success', 'User has been added');
         }  
         else{
-            return back()->with('error', 'Something went wrong');
+            return back()->withErros(['errors' => 'Something went wrong']);
         }
     }
 
-            // Login
+            // Login & Show dashboard who logged in
 
     public function class_login(Request $request){
         $request->validate([
@@ -65,15 +67,21 @@ class InternController extends Controller{
             'password' => 'required|min:6',
         ]);
 
-        $checkLogin = DB::table('tbl_users')->where(['email' => $request->email])->get();
+            $checkLogin = DB::table('tbl_users')->where(['email' => $request->email])->first();
 
-        if($checkLogin && Hash::check($request->password, $checkLogin[0]->password)){
-            return view('dashboard');
-        }
-        else{
-            $error = 'Email or Password is wrong';
+            if($checkLogin && Hash::check($request->password, $checkLogin->password)){
+                $user_name = $checkLogin->name_first;
+                $user_role = $checkLogin->role;
             
-            return back()->with('error', 'Login failed');
-        }
+                return view('dashboard', compact('user_name'), compact('user_role'));
+
+            }
+            else{
+                
+                return back()->withErrors(['login' => 'Login failed, Email or Password is incorrect!']);
+            }
     }
+
+                    // Who logged in
+   
 }
