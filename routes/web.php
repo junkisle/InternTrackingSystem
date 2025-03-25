@@ -16,9 +16,13 @@ Route::get('/CDD_Global', [InternController::class, 'class_open_CDD_Global'])->n
 Route::post('/SignupPage', [InternController::class, 'class_signup'])->name('insert_NewUser');
 
 //Login user
-Route::post('/dashboard', [InternController::class, 'class_login'])->name('login_User');
+Route::post('/LoginPage', [InternController::class, 'class_login'])->name('login_User');
 
-//Dashboard get user id
+//Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard', ['user_data' => session('user_data')]);
+})->name('dashboard');
+
 // Route::get()
 // Auth::routes();
 

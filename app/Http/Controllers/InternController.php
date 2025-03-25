@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 
 class InternController extends Controller{
@@ -70,10 +71,11 @@ class InternController extends Controller{
             $checkLogin = DB::table('tbl_users')->where(['email' => $request->email])->first();
 
             if($checkLogin && Hash::check($request->password, $checkLogin->password)){
-                $user_name = $checkLogin->name_first;
-                $user_role = $checkLogin->role;
             
-                return view('dashboard', compact('user_name'), compact('user_role'));
+                Session::put('user_data', $checkLogin);
+
+            // Redirect to the dashboard route
+            return redirect()->route('dashboard');
 
             }
             else{

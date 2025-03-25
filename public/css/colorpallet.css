@@ -1,0 +1,150 @@
+/* ========================================
+   Color pallets V3
+=========================================== */
+:root{
+    /* Brand color */
+  --avvanz-yellow: #f3971c;
+  --avvanz-blue: #0D4860;
+  
+  
+  /* ========= Brand color shades =========== */
+  
+  
+  --avvanz-yellow-default: #f3971c;  
+  --avvanz-yellow-50: #fffaeb;
+  --avvanz-yellow-100: #fdf0c8;
+  --avvanz-yellow-200: #fcdf8b;
+  --avvanz-yellow-300: #fac84f;
+  --avvanz-yellow-400: #f8b227;
+  --avvanz-yellow-500: #f3971c; /* Default shade */
+  --avvanz-yellow-600: #d76b08;
+  --avvanz-yellow-700: #b24a0b;
+  --avvanz-yellow-800: #903910;
+  --avvanz-yellow-900: #772f10;
+  --avvanz-yellow-950: #441604;
+  
+  --avvanz-blue-default: #0D4860;
+  --avvanz-blue-50: #eaffff;
+  --avvanz-blue-100: #cafdff;
+  --avvanz-blue-200: #9cf8ff;
+  --avvanz-blue-300: #59f0ff;
+  --avvanz-blue-400: #0edeff;
+  --avvanz-blue-500: #00c0e8;
+  --avvanz-blue-600: #0098c3;
+  --avvanz-blue-700: #01789d;
+  --avvanz-blue-800: #0c617e;
+  --avvanz-blue-900: #0d4860; /* Default shade */
+  --avvanz-blue-950: #02354a;
+  
+  
+  /* Neutral color */
+  --bone-white: #F9F6EE;
+  
+  /* others */
+  --hover-yellow: #FEF9F1;
+  --hover-blue: #115572;
+  --hover-gray: #E3E5E8;
+  
+  /* ========================================
+     Suporting Colors
+  =========================================== */
+  --gray-default:#515761;
+  --gray-50: #CDD0D5;
+  --gray-100: #C2C5CC;
+  --gray-200: #ACB0BA;
+  --gray-300: #969BA7;
+  --gray-400: #7F8694;
+  --gray-500: #6B7280;
+  --gray-600: #515761; /* Default shade */
+  --gray-700: #383C43;
+  --gray-800: #1E2024;
+  --gray-900: #050506;
+  --gray-950: #000000;
+  
+  --blue-default: #2b9ad9;
+  --blue-50: #f2f8fd;
+  --blue-100: #e3f0fb;
+  --blue-200: #c1e1f6;
+  --blue-300: #8bc9ee;
+  --blue-400: #4dade3;
+  --blue-500: #2b9ad9; /* Default shade */
+  --blue-600: #1775b2;
+  --blue-700: #145e90;
+  --blue-800: #155077;
+  --blue-900: #174363;
+  --blue-950: #0f2b42;
+  
+  --red-default:#d92b2b;
+  --red-50: #fef2f2;
+  --red-100: #fde3e3;
+  --red-200: #fdcbcb;
+  --red-300: #faa7a7;
+  --red-400: #f67373;
+  --red-500: #ec4747;
+  --red-600: #d92b2b; /* Default shade */
+  --red-700: #b61f1f;
+  --red-800: #971d1d;
+  --red-900: #7d1f1f;
+  --red-950: #440b0b;
+  
+  --green-default: #4ed92b; 
+  --green-50: #eefde8;
+  --green-100: #d9f9ce;
+  --green-200: #b5f4a2;
+  --green-300: #87ea6c;
+  --green-400: #4ed92b; /* Default shade */
+  --green-500: #3ec220;
+  --green-600: #2c9b15;
+  --green-700: #237615;
+  --green-800: #205e16;
+  --green-900: #1e5017;
+  --green-950: #0a2c07;
+  
+  --yellow-default: #f2d01b; 
+  --yellow-50: #fdfce9;
+  --yellow-100: #fcf9c5;
+  --yellow-200: #faf28e;
+  --yellow-300: #f7e34d;
+  --yellow-400: #f2d01b; /* Default shade */
+  --yellow-500: #e2b810;
+  --yellow-600: #c3900b;
+  --yellow-700: #9c670c;
+  --yellow-800: #815212;
+  --yellow-900: #6e4315;
+  --yellow-950: #402208;
+  
+  --zest-default: #e6842b; 
+  --zest-50: #fdf6ed;
+  --zest-60: #f8fafc;
+  --zest-100: #f9e5cc;
+  --zest-200: #f3c994;
+  --zest-300: #eca85d;
+  --zest-400: #e6842b;
+  --zest-500: #e06a20;
+  --zest-600: #c64c19;
+  --zest-700: #a43319;
+  --zest-800: #86291a;
+  --zest-900: #6e2319;
+  --zest-950: #3f0f09;
+  
+  --elephant-50: #f0fbfb;
+  --elephant-100: #d8f3f5;
+  --elephant-200: #b6e7eb;
+  --elephant-300: #83d4dd;
+  --elephant-400: #4ab9c6;
+  --elephant-500: #2e9dac;
+  --elephant-600: #298091;
+  --elephant-700: #276877;
+  --elephant-800: #285662;
+  --elephant-900: #254854;
+  --elephant-950: #173742;
+  
+  --blue-green-100: #236e7c;
+
+  /* Shine Color */
+--foreground-color: white;
+--off-white: #FAF9F6;
+--card-shadow:0 7px 25px rgba(0, 0, 0, 0.08);
+--card-bg:#EFF4F7;
+
+}
