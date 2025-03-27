@@ -52,6 +52,7 @@
             @endif
             <form action="{{ route('login_User') }}" method="post">
             @csrf
+            @method('post')
             
             <div data-mdb-input-init class="form-outline mb-4">
               <input type="email" id="email" name="email" class="form-control form-control-lg" />

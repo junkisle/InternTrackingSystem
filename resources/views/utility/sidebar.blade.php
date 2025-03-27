@@ -5,9 +5,8 @@
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
            
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-
                 <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    @if( $user_role == 0)
+                    @if(isset($user_data->role) && $user_data->role == 0)
                     No role yet
                 </div>
                     @else
@@ -18,7 +17,7 @@
             
                 
                 <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none fs-5 d-none d-sm-inline">
-                    Welcome, {{ $user_name }}
+                    Welcome, {{ $user_data->name_first }}
                 </div>
 
 
@@ -38,8 +37,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#orders" class="nav-link px-0 align-middle" data-bs-toggle="tab" role="tab">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span>
+                        <a href="{{ route('notes.index') }}" class="nav-link px-0 align-middle" data-bs-toggle="tab" role="tab">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Notes</span>
                         </a>
                     </li>
                     <li class="nav-item">
